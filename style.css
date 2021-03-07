@@ -22,3 +22,16 @@ body {
     background-color: #ffff;
     border-radius: 5px;
 }
+#form{
+    margin-top: 60px;
+}
+.status-btn{
+    font-size: 10px;
+    background-color: #5bc0de;
+    border-radius: 6px;
+    margin-left: 8px;
+    height: 16px;
+    width: 50px;
+    color: white;
+    text-align: center;
+}

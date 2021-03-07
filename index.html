@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
     <title>Todo app</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="https://s1.mzstatic.com/us/r30/Purple4/v4/01/f9/ae/01f9ae91-c967-dc14-146f-0ff9d35924fe/mzl.jfkbclzh.png" type="image/x-icon">
     <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- font awesome -->
@@ -12,43 +15,22 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="showTodo()">
     <section class="top-section">
         <h1 class="mb-3">To do: </h1>
         <main>
-            <div class="todo-list">
-              <div class="todo-item d-flex justify-content-between align-items-center">
-                <h5>Wake Up</h5>
-                <div class="status">
-                    <button class="btn btn-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i>
-                    </button>
-                    <button class="btn btn-danger"><i class="fa fa-window-close" aria-hidden="true"></i>
-                    </button>
+           <div id="show-todo-list"></div>
+           <form id="form">
+            <div class="addTodo mb-5">
+                <div class="input-fild d-flex">
+                    <label class="input-label" for="todo">Task</label>
+                    <input id="userTodo" class="form-control" id="todo"  type="text" placeholder="What do you need to do?" required>
                 </div>
-              </div>
-            </div>
-            <div class="todo-list">
-                <div class="todo-item d-flex justify-content-between align-items-center">
-                  <h5>Wake Up</h5>
-                  <div class="status">
-                      <button class="btn btn-primary"><i class="fa fa-check-square-o" aria-hidden="true"></i>
-                      </button>
-                      <button class="btn btn-danger"><i class="fa fa-window-close" aria-hidden="true"></i>
-                      </button>
-                  </div>
+                <div class="submit d-flex justify-content-end mt-3">
+                    <button type="submit" id="submit" class="btn btn-success">Save Item</button>
                 </div>
-              </div>
-            <div class="addTodo mt-5">
-                <form>
-                    <div class="input-fild d-flex">
-                        <label class="input-label" for="todo">Task</label>
-                        <input class="form-control" id="todo"  type="text" placeholder="What do you need to do?">
-                    </div>
-                    <div class="submit d-flex justify-content-end mt-3">
-                        <button class="btn btn-success"type="submit">Save Item</button>
-                    </div>
-                </form>
             </div>
+           </form>
         </main>
     </section>
 
