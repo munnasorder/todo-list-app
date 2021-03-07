@@ -41,7 +41,6 @@ const deleteTodo = id => {
 // show todo list
 function showTodo (){
     const issues = JSON.parse(localStorage.getItem('issues'))
-    console.log(issues);
     const showTodo = document.getElementById('show-todo-list')
     showTodo.innerHTML = '';
     issues.forEach(data => {
